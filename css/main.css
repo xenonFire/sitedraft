@@ -1,0 +1,17 @@
+* {
+  font-family: 'Roboto Condensed'
+}
+
+header {
+  background-color: tomato;
+}
+h1 {
+  padding: 50px;
+  color: whitesmoke;
+  font-size: 70px;
+}
+#navigation {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  color: whitesmoke;
+}
