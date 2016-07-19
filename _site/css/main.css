@@ -1,8 +1,9 @@
 * {
   font-family: 'Roboto Condensed', sans-serif;
+
 }
 
-header {
+#site-header {
   background-color: tomato;
 }
 h1 {
@@ -15,6 +16,10 @@ h1 {
   font-size: 30px;
   color: whitesmoke;
 }
+#main {
+  font-size: 20px;
+}
+
 #navlink {
   color: whitesmoke;
 }
@@ -23,10 +28,6 @@ h1 {
 }
 #sidebar-post {
   color: tomato;
-}
-#footer{
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 #copyright {
   padding-bottom:10px;
@@ -40,3 +41,21 @@ h1 {
     font-size: 15px;
   }
 }
+html {
+    position: relative;
+    min-height: 100%;
+  }
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 160px;
+  }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 160px;
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
