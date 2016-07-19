@@ -1,0 +1,20 @@
+# Site settings
+title: Little Einsteins' Tutorial
+email: contact@letutorial.com
+baseurl: ""
+url: "http://letutorial.com" # the base hostname & protocol for your site
+phone: +8801819262912
+
+# Build settings
+markdown: kramdown
+markdown_ext: "markdown,md"
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+posts_dir: ./_posts
+collections:  null
