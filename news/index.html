@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<link href="{{ "/css/newspage.css" | prepend: site.baseurl}}" rel="stylesheet">
+<div class="container">
+  {% for post in site.posts %}
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" id="sidebar-post">{{ post.title }}</a>
+    </h2>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <br />
+  {% endfor %}
+</div>

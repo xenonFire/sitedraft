@@ -69,14 +69,12 @@ layout: default
     </div>
     <div class="col-lg-3 col-sm-4 text-left" id="sidebar">
       <h2><strong>Recent News</strong></h2>
-      {% for post in site.posts %}
-        {% if forloop.index < 6 == false %}
+      {% for post in site.posts limit:6 %}
           <h3>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" id="sidebar-post">{{ post.title }}</a>
           </h3>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           <br />
-        {% endif %}
       {% endfor %}
     </div>
   </div>
